@@ -1,0 +1,111 @@
+/* O Css serve para personalizar, dar uma cara mais bonita ao site, enfeitar e etc.  */
+
+
+
+/*  Estilos da página index.html */
+
+*{
+    padding: 0;
+    margin: 0;
+    border: 0;
+  }
+
+.center{
+    text-align: center; /* esta classe serve para centralizar textos e eu chamo ela lá na página que eu quero dentro da tag de h, de p ou até de div*/
+}
+
+p{
+    font-size: 20px; /* Aqui eu defini que todos os meus parágrafos vão ser com 20 pixels no tamanho da letra*/
+    text-align: center;/*Também defini que todos os meus parágrafos vão ser centralizados*/
+}
+
+h1{
+    font-size: 30px; /* Aqui eu defini que todos os meus h1 vão ser com 20 pixels no tamanho da letra*/
+    text-align: center; /*Também defini que todos os meus h1 vão ser centralizados*/
+}
+
+.container{  /* Aqui é feita toda configuração do que vai estar dentro do container, ou seja o quadrado que eu criei e que inseri uma div que forma um elemento que é a foto e o título dessa foto e outra div que forma outro elemento que é a frase, elas ficaram juntas nesse mesmo quadrado que é o container e aqui será feita toda configuração deste container*/
+    display: flex; /*Aqui estou dizendo que vou usar flexbox dentro do container*/
+    flex-flow: row; /*Aqui estou dizendo que vou deixar os elementos na mesma linha, ou seja, um do lado do outro*/
+    justify-content: center; /* este comando faz com que eu possa alinhar de diversas formas os objetos dentro do container, posso alinhar ao centro, a esquerda, direita e etc*/
+    align-items: center;/* Este comando alinha os elementos verticalmente, ou seja, alinha eles na mesma altura dentro do container, não fica um mais pra baixo e outro mais par cima, eles ficam alinhados em linha reta.*/
+    
+}
+
+
+.containerVideo{ /* Fiz um container para o vídeo para poder deixá-lo na esquerda com o flex start*/
+    display: flex;
+    flex-flow: row;
+    justify-content: flex-start;
+    align-items: center;
+    padding-bottom: 50px;
+
+}
+
+#menu li{ /* chamo o menu, e como ele é id vem como hashtag e não ponto. entro na li que são os ítens da lista */ 
+    display: inline; /* Aqui coloca que vai aparecer estes ítens da minha lista que são os li, eles vão aparecer um ao lado do outro*/
+    padding: 15px; /* o Padiing é o espaçamento interno do conteúdo, ou seja, vai separar os ítens, dar um espaço, senão ficariam colados, por exemplo, ficaria: pagina inicialcontato. já com o padding ele separa e fica pagina
+     inicial  (esse espaço é o padding)   contato*/
+    
+}
+
+#menu li a{ /* chamou menu novamente porém com a tag a, pois pra trocar nome de letra, tirar o sublinhado, só é aceito no a, pois ele realmente se refere ao link a qual aquele ítem que eu clicar vai me levar. */
+    text-decoration: none; /* Este comando serve para tirar aquele sublinhado de link */
+    color: #c44569; /*Este comando serve para colocar a cor que eu quiser nos ítens do menu */
+    font-size: 22px; /*Aqui escolho o tamanho da letra dos ítens da lista*/
+}
+
+#menu li a:hover{  /*Novamente chamo a taga "a" do menu li pois estou me referindo ao próprio item, e atribuo o hover que serve para quando passar o mouse no ítem ele mudar de cor*/
+    color: lightseagreen; /*Aqui eu escolho a cor a qual vou querer que fique quando eu passar o mouse sobre o ítem */
+}
+ .p-30{
+     padding: 20px;
+ }
+
+
+.br-50{
+    border-radius: 30%;
+}
+
+.tm-social{ /* Este método foi usado para definir o tamanho dos meus ícones */
+    width: 30px; 
+    height: 30px;
+
+}
+
+.mb-50{
+    margin-bottom: 50px;
+}
+
+.containerCorFundo{
+    background-image: url(/assets/img/2022fwc_square_portrait_1080x1080.jpg);
+    background-repeat: no-repeat;
+    background-size:3600px ;
+    
+}
+.paddingMenu{
+    padding-bottom: 50px;
+
+}
+
+.alinhaMenu{
+    padding-bottom: 25px;
+    padding-top: 15px;
+    background-color: #dfe6e9;
+    
+}
+
+.footerColor{
+    background-color: black;
+}
+
+
+
+
+
+/*  Estilos da página contato.html */
+
+.ml-50{ /* Faz com que o formulario de uma espaçada da esquerda, ou seja da uma margem da esquerda pro formulario */
+
+    margin-left: 50px;
+}
